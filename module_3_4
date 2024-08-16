@@ -5,9 +5,6 @@ def single_root_words(root_word, *other_words):
         other_words = i.lower()
         if root_word.lower() in i.lower() or i.lower() in root_word.lower():
             same_words.append(i)
-            same_words = list(set(same_words))
-        # elif other_words in root_word:
-        #     same_words.append(other_words)
     return same_words
 
 
